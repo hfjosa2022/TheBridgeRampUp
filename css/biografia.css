@@ -25,6 +25,25 @@ body {
     margin-right: 15%;
 }
 
+#thead {
+    background-color: #ffffff;
+    border: 3px solid;
+    border-radius: 10%;
+}
+
+#tbody {
+    background-color: #008000 ;
+    border: 3px solid;
+    border-radius: 10%;
+}
+
+#tfoot {
+    background-color: #ffffff;
+    border: 3px solid;
+    border-radius: 10%;
+
+}
+
 #footer {
     width: 95%;
     height: 10%;

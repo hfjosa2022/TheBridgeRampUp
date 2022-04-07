@@ -17,12 +17,24 @@ body {
 }
 
 .contenedorForm {
+    background-color: #7fff7d;
+    font-size: 35px bold;
     width: 50%;
     height: 70%;
     border: 3px solid;
     border-radius: .5em;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+main > div > form > fieldset {
+    border: 10px solid bold;
+    border-radius: 5%;
+}
+
+main > div > form > fieldset > input {
+
+    margin-left: 10%;
 }
 
 #footer {
