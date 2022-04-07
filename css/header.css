@@ -1,0 +1,25 @@
+
+.header {
+    width: 95%;
+    height: 10%;
+    background-color: #ffffff;
+    border: 3px solid;
+    border-radius: 1.5em;
+    margin: 2.5%;
+    padding: 2.5%;
+}
+
+#h1header {
+    text-align: center;
+}
+
+.contenedorNav {
+    border: 3px solid;
+    border-radius: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#liHome {
+    margin-left: 75%;
+}

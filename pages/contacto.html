@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +7,16 @@
 
     <title>Proyecto del Ramp Up</title>
     <meta name="autor" content="Héctor Fernández Josa">
-    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/contacto.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1>Curriculum Vitae Web</h1>
+            <h1 id="h1header">RampUp Project</h1>
             <nav>
-                <ul>
-                    <li> <a href="./index.html" id="liHome">Home</a></li>
+                <ul class="contenedorNav">
+                    <li> <a href="../index.html" id="liHome">Home</a></li>
                     <li> <a href="./biografia.html" id="liBilio">Bibliografía</a> </li>
                     <li> <a href="./galeria.html" id="liGaleria">Galería</a> </li>
                     <li> <a href="./contacto.html" id="liContacto">Contacto</a> </li>
@@ -24,7 +25,126 @@
         </header>
         
         <main>
-
+            <div class="contenedorForm">
+                <form action="" method="" novalidate>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        </br>
+                        </br>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" required autofocus placeholder="Héctor"/>
+                        </br>
+                        </br>
+                        <label for="segundoNombre">Segundo nombre</label>
+                        <input id="segundoNombre" type="text" required placeholder="De Andrés"/>
+                        </br>
+                        </br>
+                        <label for="primerApellido">Primer apellido</label>
+                        <input id="primerApellido" type="text" required placeholder="Fernández"/>
+                        </br>
+                        </br>
+                        <label for="segundoApellido">Segundo apellido</label>
+                        <input id="segundoApellido" type="text" required placeholder="Josa"/>
+                        </br>
+                        </br>
+                        <label for="fechaNacimiento">Fecha de nacimiento</label>
+                        <input id="fechaNacimiento" type="date" required placeholder="27/11/1983"/>
+                        </br>
+                        </br>
+                        <label for="edad">Edad</label>
+                        <input id="edad" type="number" required placeholder="38"/>
+                        </br>
+                        </br>
+                        <p><span>Sexo</span>
+                        <label for="sexo01"></label>
+                        <input id="sexo01" name="sexo" type="radio" value="hombre" required>Hombre</input>
+                        <label for="sexo02"></label>
+                        <input id="sexo02" name="sexo" type="radio" value="mujer" required>Mujer</input>
+                        </p>
+                    </fieldset>
+                    </br>
+                    </br>
+                    <fieldset>
+                        <legend>Credenciales</legend>
+                        <label for="pass">Password</label>
+                        <input id="pass" type="password" required></input>
+                    </fieldset>
+                    </br>
+                    </br>
+                    <fieldset>
+                        <legend>Datos de contacto</legend>
+                        <label for="telefonomovil">Teléfono móvil</label>
+                        <input id="telefonomovil" type="tel" required placeholder="661494274"/>
+                        </br>
+                        </br>
+                    </fieldset>
+                    </br>
+                    </br>
+                    <fieldset>
+                        <legend>Domicilio</legend>
+                        </br>
+                        </br>
+                        <label for="localidad" >Localidad</label>
+                        <input id="localidad" type="text" required placeholder="La Robla"/>
+                        </br>
+                        </br>
+                        <label for="provincia" >Provincia</label>
+                        <input id="provincia" type="text" required placeholder="León"/>
+                        </br>
+                        </br>
+                        <label for="comunidadAutonoma" >Comunidad Autónoma</label>
+                        <input id="comunidadAutonoma" type="text" required placeholder="Castilla y León"/>
+                        </br>
+                        </br>
+                        <label for="pais">País</label>
+                        <input id="pais" type="text" required placeholder="España"/>
+                        </br>
+                        </br>
+                        <label for="continente">Continente</label>
+                        <!--<input id="continente" type="text" required placeholder="Europa"/>-->
+                        <select>
+                            <optgroup label="Eurasia">
+                                <option value="europa">Europa</option>
+                                <option value="asia">Asia</option>
+                            </optgroup>
+                            <optgroup label="Americas">
+                                <option value="norteAmerica">Norte América</option>
+                                <option value="surAmerica">Sur América</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    </br>
+                    </br>
+                    <fieldset>
+                        <legend>Aficiones</legend>
+                        <label for="deporte">Deportes que prácticas</label>
+                        <input id="deporte" name="deporte" type="text" required placeholder="Yoga" list="deportes"/>
+                        <datalist id="deportes">
+                            <option value="Halterofilia"></option>
+                            <option value="Footbal"></option>
+                            <option value="Tenis"></option>
+                            <option value="MMA"></option>
+                        </datalist>
+                        </br>
+                        </br>
+                        <label for="tecnologia">Tecnología</label>
+                        <input name="tecnologia01" type="checkbox" value="HTML">HTML</input>
+                        <input name="tecnologia02" type="checkbox" value="CSS" >CSS</input>
+                        <input name="tecnologia03" type="checkbox" value="Js">Java</input>
+                        <input name="tecnologia04" type="checkbox" value="JS">Java Script</input>
+                    </fieldset>
+                    </br>
+                    </br>
+                    <fieldset>
+                        <legend>Comentarios</legend>
+                        <label for="comentarios"></label>
+                        <textarea id="comentarios" cols="50" rows="10">Dinos tus ideas</textarea>
+                    </fieldset>
+                    </br>
+                    <input type="submit" value="Enviar formulario"/>
+                    <input type="reset" value="Resetear formulario"/>
+                </form>
+        </div>
         </main>
 
         <footer id="footer">

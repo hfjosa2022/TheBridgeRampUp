@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +7,16 @@
 
     <title>Proyecto del Ramp Up</title>
     <meta name="autor" content="Héctor Fernández Josa">
-    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/biografia.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1>Curriculum Vitae Web</h1>
+            <h1 id="h1header">RampUp Project</h1>
             <nav>
-                <ul>
-                    <li> <a href="./index.html" id="liHome">Home</a></li>
+                <ul class="contenedorNav">
+                    <li> <a href="../index.html" id="liHome">Home</a></li>
                     <li> <a href="./biografia.html" id="liBilio">Bibliografía</a> </li>
                     <li> <a href="./galeria.html" id="liGaleria">Galería</a> </li>
                     <li> <a href="./contacto.html" id="liContacto">Contacto</a> </li>
@@ -24,6 +25,50 @@
         </header>
         
         <main>
+            <table id="table01">
+                <thead>
+                    <tr>
+                        <td>Dato requerido</td>
+                        <td>Dato introducido</td>
+                        <td>Dato obligatorio</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td></td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Primer apellido</td>
+                        <td></td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Segundo apellido</td>
+                        <td></td>
+                        <td>Opcional</td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono móvil</td>
+                        <td></td>
+                        <td>Opcional</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td></td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Warning</td>                        
+                    </tr>
+                    <tr>
+                        <td colspan="3">Todos los datos serán usados para mandarle información publicitaria hasta saturarle el correo electrónico, despertarle a las 03:00 de la mañana para venderle aspiradores, etc.</td>
+                    </tr>
+                </tfoot>
+            </table>
 
         </main>
 

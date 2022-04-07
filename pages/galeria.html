@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +7,16 @@
 
     <title>Proyecto del Ramp Up</title>
     <meta name="autor" content="Héctor Fernández Josa">
-    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/galeria.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <h1>Curriculum Vitae Web</h1>
+            <h1 id="h1header">RampUp Project</h1>
             <nav>
-                <ul>
-                    <li> <a href="./index.html" id="liHome">Home</a></li>
+                <ul class="contenedorNav">
+                    <li> <a href="../index.html" id="liHome">Home</a></li>
                     <li> <a href="./biografia.html" id="liBilio">Bibliografía</a> </li>
                     <li> <a href="./galeria.html" id="liGaleria">Galería</a> </li>
                     <li> <a href="./contacto.html" id="liContacto">Contacto</a> </li>
@@ -24,7 +25,28 @@
         </header>
         
         <main>
-
+            <div class="contenedorOpc">
+                <div class="texto">
+                    <h2>Textos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore quisquam obcaecati est esse delectus a mollitia quod, at voluptas, ipsa quis suscipit ducimus repellat, rem tenetur sequi necessitatibus culpa ut quo itaque. Quas atque praesentium magnam. Asperiores voluptas, quia, sunt assumenda vero necessitatibus voluptatem, pariatur facere temporibus delectus eius laboriosam error perspiciatis reprehenderit reiciendis dolores? Aut ipsam non, enim doloribus error corporis ab? Magnam aspernatur ratione asperiores quibusdam perferendis soluta omnis. Aspernatur assumenda repudiandae voluptates illum similique, consequatur mollitia in aperiam ea! Temporibus cupiditate exercitationem reprehenderit debitis vero est. Maiores dignissimos harum error autem earum enim? Vero, nostrum ad?</p>
+                </div>
+                <div class="imagen">
+                    <h2>Imágenes</h2>
+                    <img src="../img/flores.jfif">
+                </div>
+                <div class="video">
+                    <h2>Vídeos</h2>
+                    <video autoplay controls style="width: 80%; height: 80%">
+                        <source src="../video/memes cortos pero graciosos.mp4">
+                    </video>
+                </div>
+                <div class="audio">
+                    <h2>Audios</h2>
+                    <audio autoplay controls>
+                        <source src="../audio/videoplayback.m4a">
+                    </audio>
+                </div>
+            </div>
         </main>
 
         <footer id="footer">
